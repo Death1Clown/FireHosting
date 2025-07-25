@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Orbitron', sans-serif;
-  background: #0f0f0f;
+  background: #000001;
   color: #fff;
   overflow: hidden;
 }
@@ -13,7 +13,7 @@ body {
   width: 100%; height: 100%;
   background: radial-gradient(circle at center, #00ffcc22, #000000);
   z-index: -1;
-  animation: pulse 5s infinite;
+  animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
@@ -313,3 +313,64 @@ button:hover {
 .btn:hover {
   transform: scale(1.05);
 }
+
+.features-intro {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #00ffcc;
+}
+
+.features-intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 10px #00ffcc;
+}
+
+.feature-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.feature-box {
+  background: rgba(0, 255, 204, 0.05);
+  border: 1px solid #00ffcc;
+  box-shadow: 0 0 15px #00ffcc;
+  padding: 1.5rem;
+  border-radius: 8px;
+  max-width: 250px;
+  flex: 1 1 200px;
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
+.feature-box h3 {
+  margin-bottom: 0.75rem;
+  color: #00ffcc;
+  font-size: 1.25rem;
+  text-shadow: 0 0 5px #00ffcc;
+}
+
+.feature-box p {
+  color: #ccc;
+  font-size: 1rem;
+}
+footer {
+      background: #000001;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #555;
+   }
+    
+    /* Reset & Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
